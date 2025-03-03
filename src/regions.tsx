@@ -142,6 +142,26 @@ const regions: Region[] = [
       { x: 2131.18, y: 2163.01 },
       { x: 2043.15, y: 2141 },
     ]
+  },
+  {
+    label: 'X08',
+    names: {
+      en: 'Dialogue Theater –sign of life–',
+      ja: 'Dialogue Theater –いのちのあかし–',
+      'zh-CN': 'Dialogue Theater –生命之明志–',
+      'zh-TW': 'Dialogue Theater –生命之明志–'
+    },
+    url: 'https://expo2025-inochinoakashi.com/',
+    coords: [
+      { x: 2124.89, y: 1974.37 },
+      { x: 2197.2, y: 1958.65 },
+      { x: 2206.63, y: 2030.96 },
+      { x: 2156.33, y: 2034.11 },
+      { x: 2156.33, y: 2056.12 },
+      { x: 2181.48, y: 2068.69 },
+      { x: 2165.76, y: 2109.56 },
+      { x: 2102.88, y: 2084.41 },
+    ]
   }
 ]
 
