@@ -14,9 +14,9 @@ const regions: Region[] = [
     label: 'X01',
     names: {
       en: 'Better Co-Being',
-      ja: '',
-      'zh-CN': '',
-      'zh-TW': ''
+      ja: 'Better Co-Being',
+      'zh-CN': 'Better Co-Being',
+      'zh-TW': 'Better Co-Being'
     },
     coords: [
       { x: 2299.41, y: 1905.33 },

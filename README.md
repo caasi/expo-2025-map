@@ -1,54 +1,41 @@
-# React + TypeScript + Vite
+# Expo 2025 Osaka Interactive Map
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+It's a pain to find pavilions of Expo 2025. So here is a simple interactive map.
 
-Currently, two official plugins are available:
+## How to Add Regions
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Open `src/regions.tsx`. Append a new region `regions`.
 
-## Expanding the ESLint configuration
+Here is an example region:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
+```javascript
+{
+  label: 'X01',
+  names: {
+    en: 'Better Co-Being',
+    ja: 'Better Co-Being',
+    'zh-CN': 'Better Co-Being',
+    'zh-TW': 'Better Co-Being'
   },
-})
+  coords: [
+    { x: 2299.41, y: 1905.33 },
+    { x: 2330.27, y: 1893.76 },
+    { x: 2380.41, y: 2078.90 },
+    { x: 2318.7, y: 2094.33 },
+    { x: 2295.56, y: 2036.47 },
+    { x: 2264.71, y: 2032.62 },
+    { x: 2260.85, y: 1986.33 },
+    { x: 2276.28, y: 1978.62 },
+    { x: 2291.71, y: 1928.48 },
+  ]
+}
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ToDos
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- [x] show regions
+- [ ] region name toggler
+- [ ] minimum i18n support
+  - [ ] `lang` query
+  - [ ] fallback to the browser setting
+- [ ] search
