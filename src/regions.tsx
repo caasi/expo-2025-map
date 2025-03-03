@@ -124,6 +124,24 @@ const regions: Region[] = [
       { x: 2058.87, y: 2295.05 },
       { x: 2002.28, y: 2276.19 },
     ]
+  },
+  {
+    label: 'X07',
+    names: {
+      en: 'Earth Mart',
+      ja: 'Earth Mart',
+      'zh-CN': 'Earth Mart',
+      'zh-TW': 'Earth Mart'
+    },
+    url: 'https://expo2025earthmart.jp/',
+    coords: [
+      { x: 2093.45, y: 1949.22 },
+      { x: 2115.46, y: 1958.65 },
+      { x: 2090.31, y: 2096.99 },
+      { x: 2156.33, y: 2115.85 },
+      { x: 2131.18, y: 2163.01 },
+      { x: 2043.15, y: 2141 },
+    ]
   }
 ]
 
