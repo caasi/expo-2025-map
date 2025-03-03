@@ -34,8 +34,8 @@ Here is an example region:
 ## ToDos
 
 - [x] show regions
+- [x] minimum i18n support
+  - [x] `lang` query
+  - [x] fallback to the browser setting
 - [ ] region name toggler
-- [ ] minimum i18n support
-  - [ ] `lang` query
-  - [ ] fallback to the browser setting
 - [ ] search

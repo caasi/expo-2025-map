@@ -1,11 +1,6 @@
 interface Region {
   label: string
-  names: {
-    en: string
-    ja: string
-    'zh-CN': string
-    'zh-TW': string
-  }
+  names: Partial<Record<string, string>>
   coords: { x: number, y: number }[]
 }
 

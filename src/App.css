@@ -3,8 +3,12 @@
   padding: 0;
 }
 
-#map {
+#app {
   position: relative;
+  height: 100vh;
+}
+
+#map {
   height: 100vh;
 }
 
@@ -37,4 +41,10 @@
 #map #regions g:hover text,
 #map #regions g.active text {
   display: block;
+}
+
+#actions {
+  position: absolute;
+  top: 1vh;
+  right: 1vw;
 }
