@@ -2,6 +2,8 @@
 
 It's a pain to find pavilions of Expo 2025. So here is a simple interactive map.
 
+The map image is composed by [Mouse Around the World](https://mousearoundtheworld.com/updated-osaka-expo-2025-map/). Please visit him a visit!
+
 ## How to Add Regions
 
 Open your devtool and click anywhere on the map. It will output transformed coordinates.
