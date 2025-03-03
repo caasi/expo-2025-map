@@ -38,6 +38,10 @@
   font-weight: bold;
 }
 
+#map #regions g a text {
+  text-decoration: underline;
+}
+
 #map #regions g:hover text,
 #map #regions g.active text {
   display: block;

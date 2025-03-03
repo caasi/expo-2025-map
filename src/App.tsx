@@ -11,7 +11,7 @@ function App() {
   const sizeObserverRef = useRef<ResizeObserver>(new ResizeObserver((entries) => {
     for (const entry of entries) {
       if (entry.contentRect.width !== containerRect.width || entry.contentRect.height !== containerRect.height) {
-        setContainerRect(entry.contentRect)
+        setContainerRect(entry.target.getBoundingClientRect())
       }
     }
   }))
@@ -38,8 +38,8 @@ function App() {
 
   // output the coordinates of the clicked point so that we can add them to the regions
   const handleClick = (e: MouseEvent<HTMLDivElement>) => {
-    const x = roundToTwo((e.clientX - containerRect.left) * scale.x)
-    const y = roundToTwo((e.clientY - containerRect.top) * scale.y)
+    const x = roundToTwo((e.clientX - containerRect.left) / scale.x)
+    const y = roundToTwo((e.clientY - containerRect.top) / scale.y)
     console.log(`{ x: ${x}, y: ${y} },`)
   }
 
@@ -61,13 +61,12 @@ function App() {
   }
 
   return (
-    <div id="app">
+    <div id="app" onClick={handleClick}>
       <div id="map" ref={handleMapRef}>
         <img
           ref={handleImageRef}
           src={mapImage}
           alt="Map of the World Expo 2025"
-          onClick={handleClick}
         />
         <svg
           id="regions"
@@ -85,14 +84,23 @@ function App() {
               }, { x: 0, y: 0 })
               center.x /= region.coords.length
               center.y /= region.coords.length
+              const name = region.names[lang] ?? region.names.en
               return (
                 <g key={region.label}>
                   <polygon
                     points={region.coords.map(coord => `${coord.x},${coord.y}`).join(' ')}
                   />
-                  <text x={center.x} y={center.y} fontSize={16 / scale.x}>
-                    {region.names[lang] || region.names.en}
-                  </text>
+                  {region.url ? (
+                    <a href={region.url} target="_blank" rel="noreferrer">
+                      <text x={center.x} y={center.y} fontSize={16 / scale.x}>
+                        {name}
+                      </text>
+                    </a>
+                  ) : (
+                    <text x={center.x} y={center.y} fontSize={16 / scale.x}>
+                      {name}
+                    </text>
+                  )}
                 </g>
               )
             })
