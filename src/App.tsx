@@ -82,6 +82,7 @@ function App() {
                 acc.y += coord.y
                 return acc
               }, { x: 0, y: 0 })
+              if (region.coords.length === 0) return null
               center.x /= region.coords.length
               center.y /= region.coords.length
               const name = region.names[lang] ?? region.names.en
