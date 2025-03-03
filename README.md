@@ -4,7 +4,9 @@ It's a pain to find pavilions of Expo 2025. So here is a simple interactive map.
 
 ## How to Add Regions
 
-Open `src/regions.tsx`. Append a new region `regions`.
+Open your devtool and click anywhere on the map. It will output transformed coordinates.
+
+Open `src/regions.tsx`. Append a new region to `regions`. Add those coordinates to the `coords` field.
 
 Here is an example region:
 
@@ -17,6 +19,7 @@ Here is an example region:
     'zh-CN': 'Better Co-Being',
     'zh-TW': 'Better Co-Being'
   },
+  url: 'https://co-being.jp/expo2025/',
   coords: [
     { x: 2299.41, y: 1905.33 },
     { x: 2330.27, y: 1893.76 },
@@ -37,5 +40,5 @@ Here is an example region:
 - [x] minimum i18n support
   - [x] `lang` query
   - [x] fallback to the browser setting
-- [ ] region name toggler
-- [ ] search
+- [ ] a region name toggler to toggle all names
+- [ ] search and highlight/active search results
