@@ -88,6 +88,24 @@ const regions: Region[] = [
       { x: 2184.63, y: 2383.08 },
       { x: 2194.06, y: 2367.36 },
     ]
+  },
+  {
+    label: 'X05',
+    names: {
+      en: 'Dynamic Equilibrium of Life',
+      ja: 'いのち動的平衡館',
+      'zh-CN': '生命动态平衡馆',
+      'zh-TW': '生命動態平衡館'
+    },
+    url: 'https://www.expo2025-fukuoka-shin-ichi.jp/',
+    coords: [
+      { x: 2002.28, y: 2320.2 },
+      { x: 2096.6, y: 2332.78 },
+      { x: 2096.6, y: 2357.93 },
+      { x: 2058.87, y: 2379.94 },
+      { x: 2030.57, y: 2383.08 },
+      { x: 2002.28, y: 2364.22 },
+    ]
   }
 ]
 
