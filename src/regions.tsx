@@ -181,6 +181,26 @@ const regions: Region[] = [
       { x: 3008.33, y: 1515.36 },
       { x: 2961.17, y: 1468.2 },
     ]
+  },
+  {
+    label: 'E02',
+    names: {
+      en: 'Osaka Healthcare Pavilion Nest for Reborn',
+      ja: '大阪ヘルスケアパビリオン Nest for Reborn',
+      'zh-CN': '大阪保健馆 Nest for Reborn',
+      'zh-TW': '大阪保健館 Nest for Reborn'
+    },
+    url: 'https://www.expo2025.or.jp/domestic-pv/osaka-pv/',
+    coords: [
+      { x: 3105.79, y: 1465.06 },
+      { x: 3218.97, y: 1392.75 },
+      { x: 3266.13, y: 1427.33 },
+      { x: 3234.69, y: 1512.22 },
+      { x: 3215.83, y: 1625.4 },
+      { x: 3190.68, y: 1653.7 },
+      { x: 3096.36, y: 1619.11 },
+      { x: 3055.49, y: 1562.52 },
+    ]
   }
 ]
 
