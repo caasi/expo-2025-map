@@ -201,6 +201,25 @@ const regions: Region[] = [
       { x: 3096.36, y: 1619.11 },
       { x: 3055.49, y: 1562.52 },
     ]
+  },
+  {
+    label: 'E03',
+    names: {
+      en: 'NTT Pavilion',
+      ja: 'NTT Pavilion',
+      'zh-CN': 'NTT Pavilion',
+      'zh-TW': 'NTT Pavilion'
+    },
+    url: 'https://www.expo2025.or.jp/domestic-pv/ntt/',
+    coords: [
+      { x: 3275.56, y: 1487.07 },
+      { x: 3385.6, y: 1518.51 },
+      { x: 3391.89, y: 1575.1 },
+      { x: 3363.59, y: 1672.56 },
+      { x: 3240.98, y: 1653.7 },
+      { x: 3237.84, y: 1600.25 },
+      { x: 3250.41, y: 1549.95 },
+    ]
   }
 ]
 
