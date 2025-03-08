@@ -318,6 +318,27 @@ const regions: Region[] = [
       { x: 3162.38, y: 1920.93 },
     ]
   },
+  {
+    label: 'E09',
+    names: {
+      en: 'Women’s Pavilion',
+      ja: 'ウーマンズ パビリオン',
+      'zh-CN': '妇女展馆',
+      'zh-TW': '婦女展館'
+    },
+    url: 'https://www.expo2025.or.jp/domestic-pv/womens-pv/',
+    coords: [
+      { x: 3140.38, y: 2065.55 },
+      { x: 3404.46, y: 2062.4 },
+      { x: 3404.46, y: 2134.71 },
+      { x: 3332.15, y: 2134.71 },
+      { x: 3288.14, y: 2109.56 },
+      { x: 3237.84, y: 2109.56 },
+      { x: 3181.25, y: 2112.71 },
+      { x: 3159.24, y: 2128.43 },
+      { x: 3137.23, y: 2093.84 },
+    ]
+  }
 ]
 
 export default regions
