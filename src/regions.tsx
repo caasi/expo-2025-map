@@ -276,6 +276,22 @@ const regions: Region[] = [
       { x: 3457.91, y: 2037.25 },
       { x: 3464.2, y: 2002.67 },
     ]
+  },
+  {
+    label: 'E07',
+    names: {
+      en: 'Sumitomo Pavilion',
+      ja: '住友館',
+      'zh-CN': '住友馆',
+      'zh-TW': '住友館'
+    },
+    url: 'https://www.expo2025.or.jp/domestic-pv/sumitomo/',
+    coords: [
+      { x: 3250.41, y: 1917.78 },
+      { x: 3379.31, y: 1883.2 },
+      { x: 3388.74, y: 1971.23 },
+      { x: 3288.14, y: 2008.96 },
+    ]
   }
 ]
 
