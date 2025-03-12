@@ -396,6 +396,25 @@ const regions: Region[] = [
       { x: 3112.08, y: 2411.38 },
       { x: 3140.38, y: 2373.65 },
     ]
+  },
+  {
+    label: 'E12',
+    names: {
+      en: 'EXPO National Day Hall',
+      ja: 'EXPO ナショナルデーホール',
+      'zh-CN': 'EXPO国家日大厅',
+      'zh-TW': 'EXPO國家日大廳'
+    },
+    url: 'https://www.expo2025.or.jp/expo-map-index/main-facilities/exponationaldayhall/',
+    coords: [
+      { x: 2970.6, y: 2622.02 },
+      { x: 2989.47, y: 2600.01 },
+      { x: 3017.76, y: 2606.3 },
+      { x: 3090.07, y: 2578 },
+      { x: 3118.37, y: 2590.58 },
+      { x: 3127.8, y: 2612.59 },
+      { x: 2992.61, y: 2662.89 },
+    ]
   }
 ]
 
