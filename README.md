@@ -39,8 +39,16 @@ Here is an example region:
 ## ToDos
 
 - [x] show regions
+- [ ] manually create all regions (LLMs are not smart enough for this!)
 - [x] minimum i18n support
   - [x] `lang` query
   - [x] fallback to the browser setting
 - [ ] a region name toggler to toggle all names
 - [ ] search and highlight/active search results
+
+## references
+
+- [Updated Osaka Expo 2025 Map!](https://mousearoundtheworld.com/updated-osaka-expo-2025-map/)
+- [国内パビリオン](https://www.expo2025.or.jp/domestic-pv/)
+- [海外パビリオン](https://www.expo2025.or.jp/official-participant/)
+- [海外パビリオンの出展状況について](https://www.expo2025.or.jp/news/news-20250217-04/)
