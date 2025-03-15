@@ -485,6 +485,23 @@ const regions: Region[] = [
       { x: 1992.85, y: 1873.77 },
       { x: 1860.8, y: 1864.34 },
     ]
+  },
+  {
+    label: 'S02',
+    names: {
+      en: 'Republic of Chile Pavilion',
+      ja: 'チリ共和国パビリオン',
+      'zh-CN': '智利共和国馆',
+      'zh-TW': '智利共和國館'
+    },
+    url: 'https://expo-osaka.prochile.gob.cl/',
+    coords: [
+      { x: 1813.64, y: 1801.46 },
+      { x: 1845.08, y: 1810.89 },
+      { x: 1823.08, y: 1880.06 },
+      { x: 1797.92, y: 1870.63 },
+      { x: 1797.92, y: 1851.76 },
+    ]
   }
 ]
 
